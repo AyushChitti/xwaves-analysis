@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-st.title("📈 ECG Signal Upload & Analysis")
+st.title("XWaves - ECG Signal Upload & Analysis")
+st.write("Upload an ECG file and get an XWaves-generated report.")
 
 uploaded_file = st.file_uploader("Upload ECG .csv file", type=["csv"])
 
