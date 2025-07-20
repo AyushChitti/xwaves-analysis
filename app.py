@@ -25,7 +25,7 @@ transform = transforms.Compose([
 ])
 
 # Streamlit UI
-st.title("📸 XWaves - Chest X-ray Classifier & Auto-Report Generator")
+st.title("XWaves - Chest X-ray Classifier & Auto-Report Generator")
 st.write("Upload an X-ray image and get an XWaves-generated report.")
 
 uploaded_file = st.file_uploader("Choose an X-ray image", type=["jpg", "png", "jpeg"])
