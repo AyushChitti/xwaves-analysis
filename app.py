@@ -25,8 +25,8 @@ transform = transforms.Compose([
 ])
 
 # Streamlit UI
-st.title("📸 Chest X-ray Classifier & Auto-Report Generator")
-st.write("Upload an X-ray image and get an AI-generated report.")
+st.title("📸 XWaves - Chest X-ray Classifier & Auto-Report Generator")
+st.write("Upload an X-ray image and get an XWaves-generated report.")
 
 uploaded_file = st.file_uploader("Choose an X-ray image", type=["jpg", "png", "jpeg"])
 
@@ -42,7 +42,7 @@ if uploaded_file:
     st.subheader("🧠 AI Classification:")
     st.success(f"Predicted: **{label}**")
 
-    st.subheader("📝 AI-Generated Report:")
+    st.subheader("📝 XWaves-Generated Report:")
     if label == "Normal":
         st.write("""
         **Findings**:  
@@ -56,7 +56,7 @@ if uploaded_file:
     else:
         st.write("""
         **Findings**:  
-        - Increased opacity in the right lower lobe.  
+        - Increased opacity in the left lower lobe.  
         - Suggestive of consolidation.
 
         **Impression**:  
